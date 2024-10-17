@@ -9,4 +9,14 @@ export default [
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
+  {
+    rules: {
+      'react/react-in-jsx-scope': 'off', // Disable the rule that requires React in JSX scope
+    },
+    settings: {
+      react: {
+        version: 'detect', // Automatically detect the React version
+      },
+    },
+  },
 ];

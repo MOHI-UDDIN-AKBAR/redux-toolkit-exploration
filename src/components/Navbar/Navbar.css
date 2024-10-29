@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+.nav-bar {
+  margin-top: 0.5rem;
+}
+
+.nav-list-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav-link-list {
+  flex-basis: 50%;
+}
+
+.open-cart-section {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  width: 5rem;
+}
+
+.quantity {
+  position: absolute;
+  top: -0.5rem;
+}
+.cart-icon {
+  text-align: center;
+}
+
+.cart-icon svg {
+  width: 1.5rem;
+}

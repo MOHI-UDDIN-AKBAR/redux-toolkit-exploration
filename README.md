@@ -1,50 +1,70 @@
-# React + TypeScript + Vite
+# CoolDeals Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CoolDeals is a simple e-commerce web application that lets users to add a product to a shopping cart, and manage cart quantities. It leverages React, Zustand, Redux, and other modern web technologies to provide a smooth and interactive user experience.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add products to the shopping cart
+- Update product quantities in the cart
+- Remove items from the cart
+- Display total price and quantity in the cart
+- Responsive and user-friendly design
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React** for the user interface
+- **CSS** for styling the components
+- **Axios** for data fetching
+- **TypeScript** for type safety
+- **Context API** for global state management
+- **Zustand** for global state management
+- **Redux** for global state management
 
-- Configure the top-level `parserOptions` property like this:
+## Project Setup
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (version 14 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) for package management
+
+### Installation
+
+1. Clone the repository:
+
+   ```
+   git clone https://github.com/MOHI-UDDIN-AKBAR/state-management-in-react.git
+   cd state-management-in-react
+   ```
+
+2. Install dependencies:
+
+```
+npm install or
+
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Or if you're using Yarn:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react';
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-});
 ```
+ yarn install
+```
+
+### Running the Project
+
+To start the development server, run:
+
+```
+npm run dev
+
+```
+
+Or if you're using Yarn:
+
+```
+ yarn run dev
+
+```
+
+After that, open your browser and go to http://localhost:5173 to see the app in action.

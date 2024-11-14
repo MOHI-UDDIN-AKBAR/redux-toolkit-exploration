@@ -1,0 +1,14 @@
+/* style: add CSS files for components */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #1f2533;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}

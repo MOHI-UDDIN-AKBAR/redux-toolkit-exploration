@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+.main-header {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  padding: 0.3rem 0.5rem;
+  place-items: end;
+}
+
+.main-header :first-child {
+  place-self: start;
+  font-family: 'Exo 2', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  align-self: center;
+}
+
+.cart-icon {
+  width: 35px;
+  margin-right: 2rem;
+  cursor: pointer;
+}

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&display=swap');
+
+.product-list {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro-title {
+  font-family: 'Glegoo', serif;
+  font-style: normal;
+  font-size: 1.1rem;
+  margin: 2rem 0;
+}
+
+.product-gallery {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+@media screen and (max-width: 968px) {
+  .product-gallery {
+    width: 95%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-gallery {
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

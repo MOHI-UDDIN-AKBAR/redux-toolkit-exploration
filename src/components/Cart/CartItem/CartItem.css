@@ -1,0 +1,38 @@
+.cart-item {
+  width: 100%;
+  padding: 0.3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr;
+  place-items: center;
+  gap: 1rem;
+}
+
+.item-image {
+  width: 100%;
+  height: 60px;
+  object-fit: cover;
+}
+
+.cart-item-controller {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.item-quantity {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.left-arrow,
+.right-arrow,
+.delete-icon {
+  width: 25px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 978px) {
+  .item-image {
+    height: 50px;
+  }
+}
